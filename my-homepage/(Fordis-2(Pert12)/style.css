@@ -1,0 +1,63 @@
+body {
+  background-color: #000066;
+  color: white;
+  font-family: "Courier New", monospace;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: cyan;
+  border-bottom: 2px dashed blue;
+  letter-spacing: 3px;
+}
+
+h2 {
+  color: lime;
+}
+
+h3 {
+  color: violet;
+}
+
+a {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.author {
+  color: orange;
+  font-weight: bold;
+}
+
+.sponsor {
+  color: lime;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: navy;
+  color: cyan;
+  border: 3px solid silver;
+  padding: 10px 20px;
+  font-weight: bold;
+  box-shadow: 3px 3px 5px #333;
+}
+
+.advertisement {
+  margin-top: 40px;
+  border: 2px dashed red;
+  padding: 15px;
+  background-color: #111199;
+}
+
+.advertisement h2 {
+  color: cyan;
+}
+
+.highlight {
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
