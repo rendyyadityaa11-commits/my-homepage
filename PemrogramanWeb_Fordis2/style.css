@@ -1,0 +1,77 @@
+/* style.css — gaya menyerupai contoh (serif, kecil, rapih) */
+:root{
+--base-font: "Times New Roman", Times, serif;
+--text-color: #111;
+--muted: #666;
+--max-width: 760px;
+}
+
+*{box-sizing:border-box}
+body{
+font-family: var(--base-font);
+color: var(--text-color);
+margin: 20px;
+background: #fff;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+max-width: var(--max-width);
+font-size: 13px; /* kecil seperti contoh */
+line-height: 1.2;
+}
+
+/* headings */
+h1{font-size:24px;margin-bottom:12px}
+h2{font-size:16px;margin:18px 0 8px 0}
+
+/* general list spacing and indentation */
+ol, ul{
+margin: 0 0 8px 20px;
+padding: 0;
+}
+
+/* Variasi 1: classic nested numbering */
+.v1 ol { margin-left: 12px; }
+.v1 ol li{ margin: 6px 0; }
+
+/* Specific list types for deeper levels (modern browsers) */
+.v1 ol[type="A"]{ list-style-type: upper-alpha; }
+.v1 ol[type="i"]{ list-style-type: lower-roman; }
+
+/* Variasi 2: emojis as markers via pseudo elements (fallback uses emoji text too) */
+.emoji-list{ list-style: none; margin-left: 0; padding-left: 0; }
+.emoji-list > li{ margin: 6px 0 6px 10px; position: relative; }
+
+/* smaller markers for nested levels */
+.emoji-list.level1 > li::before{ content: ""; } /* top-level handled inline in markup */
+.emoji-list.level2 li::before{ content: "•"; margin-right:8px; display:inline-block; width:1em; color:#333; }
+.emoji-list.level3 li::before{ content: "▫"; margin-right:8px; display:inline-block; width:1em; color:#666; }
+
+/* Variasi 3: compact small bullets */
+.v3 .compact{ font-size:12px; color: var(--text-color); }
+.v3 .compact ul{ margin-left: 18px; }
+
+/* muted note */
+.muted{ color: var(--muted); font-size:12px; margin-bottom:6px; }
+
+/* Variasi 4: inline icons and descriptions */
+.inline-icons{ list-style:none; margin-left:0; padding-left:0; }
+.inline-icons li{ margin:8px 0; }
+.inline-icons .icon{ display:inline-block; width:18px; text-align:center; margin-right:6px; vertical-align:middle; }
+.inline-desc{ margin-left:26px; font-size:13px; }
+
+/* Variasi 5: custom ::marker styling if supported */
+.fancy{ list-style: none; padding-left: 0; }
+.fancy li{ margin:6px 0 6px 18px; position:relative; }
+.fancy li::marker{ content: "▾"; color:#222; } /* fallback: may not work in all browsers */
+.fancy ul{ margin-left:14px; }
+
+/* small code block style in footer */
+footer.credits{ margin-top:18px; border-top:1px solid #e6e6e6; padding-top:10px; font-size:12px; color:var(--muted); }
+code{ background:#f6f6f6; padding:2px 6px; border-radius:3px; font-family:monospace; font-size:12px; }
+@media (max-width:520px){
+.container{ font-size:12px; padding-right:8px }
+h1{font-size:20px}
+}

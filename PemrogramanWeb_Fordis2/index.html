@@ -1,0 +1,209 @@
+<!doctype html>
+
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Variasi List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Variasi List</h1>
+
+
+<!-- Variasi 1: klasik terurut (1., A., i., a.) -->
+<section class="variation v1">
+  <h2>Variasi 1</h2>
+  <ol>
+    <li>Hardware
+      <ol type="A">
+        <li>Input Device
+          <ol type="i">
+            <li>Mouse</li>
+            <li>Keyboard</li>
+            <li>Joystick</li>
+          </ol>
+        </li>
+        <li>Output Device
+          <ol type="i">
+            <li>Monitor</li>
+            <li>Printer</li>
+            <li>Speaker</li>
+          </ol>
+        </li>
+        <li>Process
+          <ol type="i">
+            <li>Central Processing Unit</li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+
+    <li>Software
+      <ol type="A">
+        <li>Operating System
+          <ul>
+            <li>Windows</li>
+            <li>Unix</li>
+            <li>Linux</li>
+          </ul>
+        </li>
+        <li>Programming Language
+          <ol type="i">
+            <li>Delphi</li>
+            <li>Cobol</li>
+            <li>RPG</li>
+          </ol>
+        </li>
+        <li>Utility Program</li>
+      </ol>
+    </li>
+  </ol>
+</section>
+
+<!-- Variasi 2: bullet dengan emoji / icon pada tiap level -->
+<section class="variation v2">
+  <h2>Variasi 2</h2>
+  <ul class="emoji-list root">
+    <li class="level1">💠 <strong>Hardware</strong>
+      <ul class="emoji-list level2">
+        <li>🔹 Input Device
+          <ul class="emoji-list level3">
+            <li>▫️ Mouse</li>
+            <li>▫️ Keyboard</li>
+            <li>▫️ Joystick</li>
+          </ul>
+        </li>
+        <li>🔹 Output Device
+          <ul class="emoji-list level3">
+            <li>▫️ Monitor</li>
+            <li>▫️ Printer</li>
+            <li>▫️ Speaker</li>
+          </ul>
+        </li>
+        <li>🔹 Process
+          <ul class="emoji-list level3">
+            <li>▫️ Central Processing Unit</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="level1">💗 <strong>Software</strong>
+      <ul class="emoji-list level2">
+        <li>🔸 Operating System
+          <ul>
+            <li>• Windows</li>
+            <li>• Unix</li>
+            <li>• Linux</li>
+          </ul>
+        </li>
+        <li>🔸 Programming Language
+          <ul>
+            <li>• Delphi</li>
+            <li>• Cobol</li>
+            <li>• RPG</li>
+          </ul>
+        </li>
+        <li>🔸 Utility Program</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<!-- Variasi 3: simple bullets, compact -->
+<section class="variation v3">
+  <h2>Variasi 3</h2>
+  <p class="muted">(Centang hanya sebagai indikator — tidak ada CSS/JS khusus)</p>
+  <ul class="compact">
+    <li>Hardware
+      <ul>
+        <li>Input Device
+          <ul>
+            <li>Mouse</li>
+            <li>Keyboard</li>
+            <li>Joystick</li>
+          </ul>
+        </li>
+        <li>Output Device
+          <ul>
+            <li>Monitor</li>
+            <li>Printer</li>
+            <li>Speaker</li>
+          </ul>
+        </li>
+        <li>Process (CPU)</li>
+      </ul>
+    </li>
+
+    <li>Software
+      <ul>
+        <li>Operating System (Windows/Unix/Linux)</li>
+        <li>Programming Language (Delphi/Cobol/RPG)</li>
+        <li>Utility Program</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<!-- Variasi 4: inline colored icons + bold labels -->
+<section class="variation v4">
+  <h2>Variasi 4</h2>
+  <ul class="inline-icons">
+    <li><span class="icon">🟢</span> <strong>Hardware</strong>
+      <div class="inline-desc">Input Device: <em>Mouse, Keyboard, Joystick</em></div>
+      <div class="inline-desc">Output Device: <em>Monitor, Printer, Speaker</em></div>
+      <div class="inline-desc">Process: <em>Central Processing Unit</em></div>
+    </li>
+
+    <li><span class="icon">🔵</span> <strong>Software</strong>
+      <div class="inline-desc"><strong>Operating System:</strong> Windows, Unix, Linux</div>
+      <div class="inline-desc"><strong>Programming Language:</strong> Delphi, Cobol, RPG</div>
+      <div class="inline-desc"><strong>Utility Program</strong></div>
+    </li>
+  </ul>
+</section>
+
+<!-- Variasi 5: custom marker via ::marker (triangle/diamond) -->
+<section class="variation v5">
+  <h2>Variasi 5</h2>
+  <ul class="fancy">
+    <li>Hardware
+      <ul>
+        <li>Input Device
+          <ul>
+            <li>Mouse</li>
+            <li>Keyboard</li>
+            <li>Joystick</li>
+          </ul>
+        </li>
+        <li>Output Device
+          <ul>
+            <li>Monitor</li>
+            <li>Printer</li>
+            <li>Speaker</li>
+          </ul>
+        </li>
+        <li>Process — CPU</li>
+      </ul>
+    </li>
+
+    <li>Software
+      <ul>
+        <li>Operating System</li>
+        <li>Programming Language</li>
+        <li>Utility Program</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<footer class="credits">
+  <p>File ini dibuat untuk meniru tampilan daftar bertingkat. Letakkan <code>index.html</code> dan <code>style.css</code> di folder yang sama dan push ke GitHub.</p>
+</footer>
+
+
+  </main>
+</body>
+</html>
